@@ -65,6 +65,9 @@ neo4j:
   # this can be used to perform tasks that cannot be performed when Neo4j is running such as `neo4j-admin dump`
   offlineMaintenanceModeEnabled: false
   #
+  # Disable the check for minimal resources. Use for develop servers like feature environments only. Valid values: true and false
+  developServer: false
+
   # set resources for the Neo4j Container. The values set will be used for both "requests" and "limit".
   resources:
     cpu: "1000m"
